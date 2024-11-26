@@ -2,3 +2,4 @@ modal
 python-dotenv
 loguru
 requests
+jupyter

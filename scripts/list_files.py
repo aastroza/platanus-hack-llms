@@ -12,11 +12,12 @@ for folder in all_folders:
     folder_files = []
     for path in folder.rglob("*"):
         if path.is_file():
-            folder_files.append(str(path).replace("\\", "/"))
+            relative_path = path.relative_to(folder)
+            folder_files.append(str(relative_path).replace("\\", "/"))
     file_lists[folder.name] = folder_files
 
 for team, files in file_lists.items():
-    file_path = os.path.join(processed_folder, f"{team}_files.txt")
+    file_path = os.path.join(processed_folder, f"{team}.txt")
     with open(file_path, "w") as f:
         f.write("\n".join(files))
     logger.info(f"Saved file list for {team} in {file_path}")

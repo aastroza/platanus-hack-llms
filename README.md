@@ -1,5 +1,5 @@
 # platanus-hack-llms
-Analysis of LLM strategies, models, techniques, and prompts used in [platanus-hack](https://github.com/platanus-hack) projects
+Analysis of LLM strategies, models, techniques, and prompts used in [platanus-hack](https://github.com/platanus-hack) projects.
 
 ## Installation
 
@@ -14,4 +14,5 @@ uv pip install -r requirements.txt
 ```bash
 cd scripts
 python download_repos.py
+oython list_files.py
 ```
