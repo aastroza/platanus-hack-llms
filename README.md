@@ -1,5 +1,5 @@
 # platanus-hack-llms
-Analysis of LLM strategies, models, techniques, and prompts used in platanus-hack projects
+Analysis of LLM strategies, models, techniques, and prompts used in [platanus-hack](https://github.com/platanus-hack) projects
 
 ## Installation
 
